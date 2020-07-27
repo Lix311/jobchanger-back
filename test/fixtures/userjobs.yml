@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  job_id: 1
+  status: MyString
+  contacts: MyString
+  action: MyString
+  notes: MyString
+  next_step: MyString
+  next_interview: MyString
+
+two:
+  user_id: 1
+  job_id: 1
+  status: MyString
+  contacts: MyString
+  action: MyString
+  notes: MyString
+  next_step: MyString
+  next_interview: MyString
