@@ -1,35 +1,35 @@
 class UserjobsController < ApplicationController
-    def index 
-        userjobs = Userjob.all 
-        # render json: userjobs // change all to userjob
-    end 
+    # def index 
+    #     userjobs = Userjob.all 
+    #     render json: userjobs 
+    # end 
 
-    def show
-        job = Job.find(params[:id])
-        render json: job
-    end
+    # def show
+    #     userjob = Userjob.find(params[:id])
+    #     render json: userjob
+    # end
     
-    def create 
-        job = Job.create(job_params)
-        render json: job
+    # def create 
+    #     userjob = Userjob.create(userjob_params)
+    #     render json: userjob
         
-    end 
+    # end 
 
-    def update
-        job = Job.find(params[:id])
-        job.update(job_params)
-        render json: job 
-    end 
+    # def update
+    #     userjob = userJob.find(params[:id])
+    #     userjob.update(userjob_params)
+    #     render json: userjob 
+    # end 
 
-    def destroy
-        job = Job.find(params[:id])
-        job.destroy
+    # def destroy
+    #     userjob = Userjob.find(params[:id])
+    #     userjob.destroy
         
         
-    end 
+    # end 
     
-    private 
-    def job_params 
-        params.require(:job).permit(:company, :location, :title, :logo, :description, :date)
-    end 
+    # private 
+    # def userjob_params 
+    #     params.require(:userjob).permit(:user_id, :job_id, :status, :contacts, :action, :notes, :next_step, :next_interview)
+    # end 
 end
