@@ -3,6 +3,8 @@ class CreateUserjobs < ActiveRecord::Migration[6.0]
     create_table :userjobs do |t|
       t.integer :user_id
       t.integer :job_id
+      t.string :title
+      t.string :company 
       t.string :status
       t.string :contacts
       t.string :action
