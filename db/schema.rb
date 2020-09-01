@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2020_08_12_225039) do
     t.string "title"
     t.string "company"
     t.string "status"
-    t.string "contacts"
+    t.string "contact"
     t.string "action"
     t.string "notes"
     t.string "next_step"

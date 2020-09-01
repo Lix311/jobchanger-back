@@ -6,7 +6,7 @@ class CreateUserjobs < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :company 
       t.string :status
-      t.string :contacts
+      t.string :contact
       t.string :action
       t.string :notes
       t.string :next_step
