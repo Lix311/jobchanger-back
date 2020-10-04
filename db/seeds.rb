@@ -10,9 +10,9 @@ def seed_positions(data)
             company: job['company'],
             location: job['location'],
             title: job['title'],
-            logo: job['logo'],
+            logo: job['company_logo'],
             description: job['description'],
-            date: job['date']
+            date: job['created_at']
         )
     end 
 end 
