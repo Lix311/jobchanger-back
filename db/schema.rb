@@ -45,10 +45,10 @@ ActiveRecord::Schema.define(version: 2020_08_12_225039) do
     t.string "company"
     t.string "status"
     t.string "contact"
-    t.string "action"
     t.string "notes"
     t.string "next_step"
-    t.string "next_interview"
+    t.date "job_date"
+    t.time "job_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

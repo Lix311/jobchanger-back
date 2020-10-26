@@ -7,10 +7,10 @@ class CreateUserjobs < ActiveRecord::Migration[6.0]
       t.string :company 
       t.string :status
       t.string :contact
-      t.string :action
       t.string :notes
       t.string :next_step
-      t.string :next_interview
+      t.date :job_date
+      t.time :job_time
 
       t.timestamps
     end

@@ -32,6 +32,6 @@ class UserjobsController < ApplicationController
     
     private 
     def userjob_params 
-        params.require(:userjob).permit(:user_id, :job_id, :company, :contact, :title, :status, :action, :notes, :next_step)
+        params.require(:userjob).permit(:user_id, :job_id, :company, :title, :status, :next_step, :job_date, :job_time, :contact, :notes)
     end 
 end
